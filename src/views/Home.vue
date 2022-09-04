@@ -5,20 +5,21 @@
         <ion-buttons slot="start">
           <ion-menu-button color="primary"></ion-menu-button>
         </ion-buttons>
-        <ion-title>{{ $route.params.id }}</ion-title>
+        <ion-title>Home</ion-title>
       </ion-toolbar>
     </ion-header>
     
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ $route.params.id }}</ion-title>
+          <ion-title size="large">Home</ion-title>
         </ion-toolbar>
       </ion-header>
     
-      <div id="container">
-        <strong class="capitalize">{{ $route.params.id }}</strong>
-        <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <div id="container-top">
+        <h1>Welcome To Scott's Cybersecurity Help Site</h1>
+        <p>This website is to provide helpful information, tutorials, tips, tricks and suggestions for all things cybersecurity.</p>
+        <p>Disclaimer: I am not an expert in cybersecurity and do not take liability for any negative actions that may result in information from this website</p>
       </div>
     </ion-content>
   </ion-page>
@@ -29,7 +30,7 @@ import { defineComponent } from 'vue';
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 
 export default defineComponent({
-  name: 'FolderPage',
+  name: 'HomePage',
   components: {
     IonButtons,
     IonContent,
@@ -50,6 +51,13 @@ export default defineComponent({
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#container-top{
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 #container strong {
