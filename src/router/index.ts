@@ -14,6 +14,26 @@ const routes: Array<RouteRecordRaw> = [
     path: '/weekly',
     component: () => import ('../views/Weekly.vue')
   },
+  {
+    path: '/tips',
+    component: () => import ('../views/Tips.vue')
+  },
+  {
+    path: '/thingstoknow',
+    component: () => import ('../views/ThingsToKnow.vue')
+  },
+  {
+    path: '/legal',
+    component: () => import ('../views/Legal.vue')
+  },
+  {
+    path: '/error',
+    component: () => import ('../views/Error.vue')
+  },
+  {
+    path: '/future',
+    component: () => import ('../views/Future.vue')
+  },
 ]
 
 const router = createRouter({

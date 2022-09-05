@@ -8,18 +8,23 @@
         <ion-title>Home</ion-title>
       </ion-toolbar>
     </ion-header>
-    
+
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Home</ion-title>
         </ion-toolbar>
       </ion-header>
-    
+
       <div id="container-top">
         <h1>Welcome To Scott's Cybersecurity Help Site</h1>
-        <p>This website is to provide helpful information, tutorials, tips, tricks and suggestions for all things cybersecurity.</p>
-        <p>Disclaimer: I am not an expert in cybersecurity and do not take liability for any negative actions that may result in information from this website</p>
+        <p>This website is to provide helpful information, tutorials, tips, tricks and suggestions for all things
+          cybersecurity.</p>
+        <p style="margin-top: 55px; margin-bottom: 55px; font-size: 20px"><span><a href="/weekly">Weekly Tasks</a></span><span
+            style="margin-left: 10px; margin-right: 10px;"> | </span><span><a href="/tips">Tips</a></span><span
+            style="margin-left: 10px; margin-right: 10px;"> | </span><span><a href="/thingstoknow">Things To Know</a></span></p>
+        <p>Check out more of my work <a href="https://www.scottcl.com" target="_blank">here.</a></p>
+        <p style="font-size: 15px; margin-top: 15px;"><a href="/legal">Disclaimer</a></p>
       </div>
     </ion-content>
   </ion-page>
@@ -53,7 +58,7 @@ export default defineComponent({
   transform: translateY(-50%);
 }
 
-#container-top{
+#container-top {
   text-align: center;
   position: absolute;
   left: 0;
