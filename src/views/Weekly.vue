@@ -65,6 +65,7 @@
           <li>Backup Phone (Photos)
             <ul>
               <li><a href="https://tinyurl.com/mt7ksutf" target="_blank">Google Photos</a></li>
+              <li><a href="https://tinyurl.com/ycyz52ap" target="_blank">iCloud</a></li>
             </ul>
           </li>
         </ul>
