@@ -18,7 +18,9 @@
 
       <div id="container">
         <h1 class="capitalize text-center" style="margin-top: 15px;">Weekly Tasks</h1>
-        <p style="margin: 15px;" class="text-center">These are the suggested tasks to complete each week.</p>
+        <p style="margin: 15px;" class="text-center">These are the suggested tasks to complete each week.
+          <span style="font-size: 15px;"><a href="/legal">Disclaimer</a></span>
+        </p>
         <p style="margin: 15px;" class="text-center">All of these tasks <i>should</i> be done automatically, however
           manually checking them will go far in keeping you secure.</p>
         <ul style="margin: 15px;">
@@ -66,6 +68,16 @@
             <ul>
               <li><a href="https://tinyurl.com/mt7ksutf" target="_blank">Google Photos</a></li>
               <li><a href="https://tinyurl.com/ycyz52ap" target="_blank">iCloud</a></li>
+            </ul>
+          </li>
+          <li>Check Bank Statements
+            <ul>
+              <li>Check any debit or credit cards you have for any fraudulent transactions</li>
+            </ul>
+          </li>
+          <li>Check News Headlines
+            <ul>
+              <li>Stay up to date with Cybersecurity by checking headlines in the news</li>
             </ul>
           </li>
         </ul>

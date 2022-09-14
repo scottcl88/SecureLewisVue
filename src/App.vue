@@ -5,9 +5,10 @@
         <ion-content>
           <ion-list id="inbox-list">
             <ion-list-header>Secure Lewis</ion-list-header>
-            <ion-note>Cybersecurity Help by Scott Lewis</ion-note>  
+            <ion-note>Cybersecurity Help by Scott Lewis</ion-note>
             <ion-menu-toggle auto-hide="false" v-for="(p, i) in appPages" :key="i">
-              <ion-item @click="selectedIndex = i" router-direction="root" :router-link="p.url" lines="none" detail="false" class="hydrated cursor" :class="{ selected: selectedIndex === i }">
+              <ion-item @click="selectedIndex = i" router-direction="root" :router-link="p.url" lines="none"
+                detail="false" class="hydrated cursor" :class="{ selected: selectedIndex === i }">
                 <ion-icon slot="start" :ios="p.iosIcon" :md="p.mdIcon"></ion-icon>
                 <ion-label>{{ p.title }}</ion-label>
               </ion-item>
@@ -24,22 +25,23 @@
 import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonNote, IonRouterOutlet, IonSplitPane } from '@ionic/vue';
 import { defineComponent, ref } from 'vue';
 import { useRoute } from 'vue-router';
-import { homeOutline, homeSharp, calendarOutline, calendarSharp, briefcase, briefcaseSharp,  alertCircle, alertSharp, informationCircleSharp, informationCircleOutline } from 'ionicons/icons';
+import { homeOutline, homeSharp, calendarOutline, calendarSharp, briefcase, briefcaseSharp, globeOutline, globeSharp, fingerPrintOutline, fingerPrintSharp, medicalOutline, medicalSharp,
+   flagOutline, flagSharp, lockClosedOutline, lockClosedSharp, alertCircle, alertSharp, informationCircleSharp, informationCircleOutline } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'App',
   components: {
-    IonApp, 
-    IonContent, 
-    IonIcon, 
-    IonItem, 
-    IonLabel, 
-    IonList, 
-    IonListHeader, 
-    IonMenu, 
-    IonMenuToggle, 
-    IonNote, 
-    IonRouterOutlet, 
+    IonApp,
+    IonContent,
+    IonIcon,
+    IonItem,
+    IonLabel,
+    IonList,
+    IonListHeader,
+    IonMenu,
+    IonMenuToggle,
+    IonNote,
+    IonRouterOutlet,
     IonSplitPane,
   },
   setup() {
@@ -58,16 +60,46 @@ export default defineComponent({
         mdIcon: calendarSharp
       },
       {
-        title: 'Tips To Know',
+        title: 'Top 12 Tips',
         url: '/tips',
         iosIcon: alertCircle,
         mdIcon: alertSharp
       },
       {
-        title: 'Things To Know',
+        title: '8 Things To Know',
         url: '/thingstoknow',
         iosIcon: informationCircleOutline,
         mdIcon: informationCircleSharp
+      },
+      {
+        title: 'Passwords',
+        url: '/passwords',
+        iosIcon: lockClosedOutline,
+        mdIcon: lockClosedSharp
+      },
+      {
+        title: 'Websites',
+        url: '/websites',
+        iosIcon: globeOutline,
+        mdIcon: globeSharp
+      },
+      {
+        title: 'Red Flags',
+        url: '/redflags',
+        iosIcon: flagOutline,
+        mdIcon: flagSharp
+      },
+      {
+        title: 'Physical Protection',
+        url: '/physical',
+        iosIcon: fingerPrintOutline,
+        mdIcon: fingerPrintSharp
+      },
+      {
+        title: 'Incident Response',
+        url: '/incidentresponse',
+        iosIcon: medicalOutline,
+        mdIcon: medicalSharp
       },
       {
         title: 'Legal',
@@ -75,17 +107,17 @@ export default defineComponent({
         iosIcon: briefcase,
         mdIcon: briefcaseSharp
       },
-    ];    
+    ];
     const path = window.location.pathname.split('/')[1];
     if (path !== undefined) {
       selectedIndex.value = appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }
-    
+
     const route = useRoute();
-    
-    return { 
+
+    return {
       selectedIndex,
-      appPages, 
+      appPages,
       isSelected: (url: string) => url === route.path ? 'selected' : ''
     }
   }
@@ -93,7 +125,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.cursor{
+.cursor {
   cursor: pointer !important;
 }
 

@@ -20,11 +20,13 @@
         <h1>Welcome To Scott's Cybersecurity Help Site</h1>
         <p>This website is to provide helpful information, tutorials, tips, tricks and suggestions for all things
           cybersecurity.</p>
-        <p style="margin-top: 55px; margin-bottom: 55px; font-size: 20px"><span><a href="/weekly">Weekly Tasks</a></span><span
-            style="margin-left: 10px; margin-right: 10px;"> | </span><span><a href="/tips">Tips</a></span><span
-            style="margin-left: 10px; margin-right: 10px;"> | </span><span><a href="/thingstoknow">Things To Know</a></span></p>
-        <p>Check out more of my work <a href="https://www.scottcl.com" target="_blank">here.</a></p>
+        <p style="margin-top: 55px; margin-bottom: 35px; font-size: 20px"><span><a href="/weekly">Weekly
+              Tasks</a></span><span style="margin-left: 10px; margin-right: 10px;"> | </span><span><a href="/tips">Top
+              12 Tips</a></span><span style="margin-left: 10px; margin-right: 10px;"> | </span><span><a
+              href="/thingstoknow">8 Things To Know</a></span></p>
         <p style="font-size: 15px; margin-top: 15px;"><a href="/legal">Disclaimer</a></p>
+        <p style="font-size: 15px;">Check out more of my work <a href="https://www.scottcl.com"
+            target="_blank">here.</a></p>
       </div>
     </ion-content>
   </ion-page>

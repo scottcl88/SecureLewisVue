@@ -23,6 +23,26 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import ('../views/ThingsToKnow.vue')
   },
   {
+    path: '/websites',
+    component: () => import ('../views/Websites.vue')
+  },
+  {
+    path: '/redflags',
+    component: () => import ('../views/RedFlags.vue')
+  },
+  {
+    path: '/passwords',
+    component: () => import ('../views/Passwords.vue')
+  },
+  {
+    path: '/physical',
+    component: () => import ('../views/Physical.vue')
+  },
+  {
+    path: '/incidentresponse',
+    component: () => import ('../views/IncidentResponse.vue')
+  },
+  {
     path: '/legal',
     component: () => import ('../views/Legal.vue')
   },

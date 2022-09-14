@@ -19,31 +19,35 @@
       <div id="container">
         <h1 class="capitalize text-center" style="margin-top: 15px;">Top Cybersecurity Tips</h1>
         <p style="margin: 15px;" class="text-center">All of these tips are recommendations and do not guarantee security
-          but may help educate you and help keep you safe.</p>
+          but may help educate you and help keep you safe.
+          <span style="font-size: 15px;"><a href="/legal">Disclaimer</a></span>
+        </p>
         <ol style="margin: 15px;">
-          <li><span>Think before you click</span><!-- <a href="/future">Learn more.</a> -->
+          <li><span>Think before you click</span><a href="/websites">Learn more.</a>
           </li>
-          <li><span>Always use an antivirus</span>
+          <li><span>Always use an antivirus</span><a href="/incidentresponse">Learn more.</a>
           </li>
-          <li><span>Update antivirus, apps, and systems regularly</span>
+          <li><span>Update antivirus, apps, and systems regularly</span><a href="/weekly">Learn more.</a>
           </li>
-          <li><span>Never leave your computer or phone alone in public</span>
+          <li><span>Never leave your computer or phone alone in public</span><a href="/physical">Learn more.</a>
           </li>
-          <li><span>Use strong passwords for everything</span>
+          <li><span>Use strong passwords for everything</span><a href="/passwords">Learn more.</a>
           </li>
-          <li><span>Use 2FA/Multifactor options when possible</span>
+          <li><span>Use 2FA/Multifactor options when possible</span><a href="/passwords">Learn more.</a>
           </li>
-          <li><span>Never share your password or security code</span>
+          <li><span>Never share your password or security code</span><a href="/passwords">Learn more.</a>
           </li>
-          <li><span>Always check the URL</span>
+          <li><span>Always check the URL</span><a href="/websites">Learn more.</a>
           </li>
-          <li><span>Verify who is calling, texting, or emailing before clicking or replying</span>
+          <li><span>Verify who is calling, texting, or emailing before clicking or replying</span><a
+              href="/websites">Learn more.</a>
           </li>
-          <li><span>Freeze your credit</span>
+          <li><span>Freeze your credit. <a href="https://www.creditkarma.com/id-theft/i/how-to-freeze-credit"
+                target="_blank">Learn more</a>.</span>
           </li>
-          <li><span>Check for card skimmers</span>
+          <li><span>Check for card skimmers</span><a href="/physical">Learn more.</a>
           </li>
-          <li><span>Never plug in directly to public USB chargers</span>
+          <li><span>Never plug in directly to public USB chargers</span><a href="/physical">Learn more.</a>
           </li>
         </ol>
       </div>
