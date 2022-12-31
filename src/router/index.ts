@@ -43,6 +43,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import ('../views/IncidentResponse.vue')
   },
   {
+    path: '/securesetup',
+    component: () => import ('../views/SecureInfoSetup.vue')
+  },
+  {
     path: '/legal',
     component: () => import ('../views/Legal.vue')
   },

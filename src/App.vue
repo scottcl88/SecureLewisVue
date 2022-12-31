@@ -26,7 +26,7 @@ import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader,
 import { defineComponent, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { homeOutline, homeSharp, calendarOutline, calendarSharp, briefcase, briefcaseSharp, globeOutline, globeSharp, fingerPrintOutline, fingerPrintSharp, medicalOutline, medicalSharp,
-   flagOutline, flagSharp, lockClosedOutline, lockClosedSharp, alertCircle, alertSharp, informationCircleSharp, informationCircleOutline } from 'ionicons/icons';
+   flagOutline, flagSharp, lockClosedOutline, lockClosedSharp, alertCircle, alertSharp, informationCircleSharp, informationCircleOutline, documentLockSharp, documentLockOutline } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'App',
@@ -100,6 +100,12 @@ export default defineComponent({
         url: '/incidentresponse',
         iosIcon: medicalOutline,
         mdIcon: medicalSharp
+      },
+      {
+        title: 'Secure Setup',
+        url: '/securesetup',
+        iosIcon: documentLockOutline,
+        mdIcon: documentLockSharp
       },
       {
         title: 'Legal',
